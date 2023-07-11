@@ -5,6 +5,7 @@ import {
     ContactSection,
     HeroSection,
     InterestsSection,
+    VideoSection,
     Page,
     ProjectsSection,
     Seo,
@@ -16,6 +17,7 @@ export default function IndexPage() {
             <Seo title="Gatsby Theme Portfolio Minimal" />
             <Page useSplashScreenAnimation>
                 <HeroSection sectionId="hero" />
+                <VideoSection sectionId="video" heading="Últimos Videos" />
                 <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Blog', 'Medium']} />
                 <AboutSection sectionId="about" heading="About Portfolio Minimal" />
                 <InterestsSection sectionId="details" heading="Details" />

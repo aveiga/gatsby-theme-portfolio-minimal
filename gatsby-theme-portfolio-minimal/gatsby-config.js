@@ -1,4 +1,7 @@
 const path = require('path');
+require('dotenv').config({
+    path: `.env`,
+});
 
 module.exports = (options) => ({
     siteMetadata: options.siteUrl ? { siteUrl: options.siteUrl } : null,
@@ -68,6 +71,14 @@ module.exports = (options) => ({
                         },
                     },
                 ],
+            },
+        },
+        {
+            resolve: `gatsby-source-youtube-v3`,
+            options: {
+                channelId: ['UCEr3qoCE0ZMlYZnVx-ZMc5g'],
+                apiKey: process.env.YT_API_KEY,
+                maxVideos: 3, // Defaults to 50
             },
         },
         options.siteUrl ? `gatsby-plugin-robots-txt` : null,
