@@ -21,18 +21,5 @@
         "husky": "4",
         "lint-staged": "^10.5.4",
         "prettier": "^2.2.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.+(ts|tsx)": [
-            "yarn lint"
-        ],
-        "*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)": [
-            "yarn format"
-        ]
     }
 }
