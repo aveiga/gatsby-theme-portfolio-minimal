@@ -1,4 +1,5 @@
 {
+    "name": "gatsby-theme-portfolio-minimal",
     "private": true,
     "scripts": {
         "test": "yarn workspace gatsby-theme-portfolio-minimal test",
